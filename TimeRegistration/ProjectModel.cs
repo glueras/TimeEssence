@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace TimeRegistration
 {
-    public class MaterialModel
+    public class ProjectModel
     {
+        public CustomerModel Customer { get; set; }
+
     }
 }

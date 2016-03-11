@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace TimeRegistration
 {
-    class VehicleModel
+    public class VehicleModel
     {
+        public string Id { get; set; }
+        public string LicensePlate { get; set; }
+        public string Model { get; set; }
+        public string Make { get; set; }
+
     }
 }

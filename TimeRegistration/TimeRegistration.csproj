@@ -58,7 +58,8 @@
     <Compile Include="CustomerModel.cs" />
     <Compile Include="InvoiceModel.cs" />
     <Compile Include="MaterialModel.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="PersonModel.cs" />
+    <Compile Include="ProjectModel.cs" />
     <Compile Include="VehicleModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
