@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TimeRegistration
 {
-    public class EmployeeModel : PersonModel
+    public class Employee : Person
     {
     }
 }

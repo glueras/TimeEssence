@@ -55,13 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="CustomerModel.cs" />
-    <Compile Include="InvoiceModel.cs" />
-    <Compile Include="MaterialModel.cs" />
-    <Compile Include="PersonModel.cs" />
-    <Compile Include="ProjectModel.cs" />
-    <Compile Include="VehicleModel.cs" />
-    <Page Include="MainWindow.xaml">
+    <Compile Include="DataModel\Customer.cs" />
+    <Compile Include="DataModel\Load.cs" />
+    <Compile Include="DataModel\Material.cs" />
+    <Compile Include="DataModel\MaterialLoad.cs" />
+    <Compile Include="DataModel\Person.cs" />
+    <Compile Include="DataModel\Project.cs" />
+    <Compile Include="DataModel\Vehicle.cs" />
+    <Page Include="View\MainView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -69,9 +70,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="EmployeeModel.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="DataModel\Employee.cs" />
+    <Compile Include="DataModel\WorkLoad.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="View\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -102,6 +105,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

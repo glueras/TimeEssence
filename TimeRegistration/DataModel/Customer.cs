@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TimeRegistration
 {
-    public class MaterialModel
+    public class Customer : Person
     {
+        //multiple addresses
     }
 }
